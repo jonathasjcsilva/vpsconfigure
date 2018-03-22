@@ -91,9 +91,9 @@ then
 	chmod +x /bin/banner
 	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/firewall.sh -O /bin/firewall
 	chmod +x /bin/firewall
-	https://github.com/jonathasjcsilva/vpsconfigure/blob/master/firewall2.sh -O /bin/firewall2
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/firewall2.sh -O /bin/firewall2
 	chmod +x /bin/firewall2
-	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/torrent.sh -O /bin/torrent
+	wget wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/torrent.sh -O /bin/torrent
 	chmod +x /bin/torrent
 	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/addhost.sh -O /bin/addhost
 	chmod +x /bin/addhost
@@ -101,35 +101,35 @@ then
 	chmod +x /bin/alterarsenha
 	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/criarusuario2.sh -O /bin/criarusuario
 	chmod +x /bin/criarusuario
-	https://github.com/jonathasjcsilva/vpsconfigure/blob/master/delhost.sh -O /bin/delhost
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/delhost.sh -O /bin/delhost
 	chmod +x /bin/delhost
-	https://github.com/jonathasjcsilva/vpsconfigure/blob/master/expcleaner2.sh -O /bin/expcleaner
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/expcleaner2.sh -O /bin/expcleaner
 	chmod +x /bin/expcleaner
-	https://github.com/jonathasjcsilva/vpsconfigure/blob/master/mudardata.sh -O /bin/mudardata
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/mudardata.sh -O /bin/mudardata
 	chmod +x /bin/mudardata
-	https://github.com/jonathasjcsilva/vpsconfigure/blob/master/remover.sh -O /bin/remover
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/remover.sh -O /bin/remover
 	chmod +x /bin/remover
-	https://github.com/jonathasjcsilva/vpsconfigure/blob/master/sshlimiter2.sh -O /bin/sshlimiter
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/sshlimiter2.sh -O /bin/sshlimiter
 	chmod +x /bin/sshlimiter
-	https://github.com/jonathasjcsilva/vpsconfigure/blob/master/alterarlimite.sh -O /bin/alterarlimite
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/alterarlimite.sh -O /bin/alterarlimite
 	chmod +x /bin/alterarlimite
-	https://github.com/jonathasjcsilva/vpsconfigure/blob/master/ajuda.sh -O /bin/ajuda
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/ajuda.sh -O /bin/ajuda
 	chmod +x /bin/ajuda
-	https://github.com/jonathasjcsilva/vpsconfigure/blob/master/sshmonitor2.sh -O /bin/sshmonitor
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/sshmonitor2.sh -O /bin/sshmonitor
 	chmod +x /bin/sshmonitor
-    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/badvpnsetup.sh -O /bin/badvpnsetup
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/badvpnsetup.sh -O /bin/badvpnsetup
 	chmod +x /bin/badvpnsetup
-    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/tcptweaker.sh -O /bin/tcptweaker
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/tcptweaker.sh -O /bin/tcptweaker
 	chmod +x /bin/tcptweaker
-    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/userbackup.sh -O /bin/userbackup
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/userbackup.sh -O /bin/userbackup
 	chmod +x /bin/userbackup
-    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/openvpnsetup.sh -O /bin/openvpnsetup
+    	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/openvpnsetup.sh -O /bin/openvpnsetup
 	chmod +x /bin/openvpnsetup
-    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/otimizar.sh -O /bin/otimizar
+    	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/otimizar.sh -O /bin/otimizar
 	chmod +x /bin/otimizar
-    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/speedtest.sh -O /bin/speedtest
+    	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/speedtest.sh -O /bin/speedtest
 	chmod +x /bin/speedtest
-    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/detalhes.sh -O /bin/detalhes
+    	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/detalhes.sh -O /bin/detalhes
 	chmod +x /bin/detalhes
 	if [ ! -f "/etc/init.d/squid3" ]
 	then
@@ -186,19 +186,19 @@ then
 	chmod +x /bin/ajuda
 	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/sshmonitor2.sh -O /bin/sshmonitor
 	chmod +x /bin/sshmonitor
-    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/badvpnsetup.sh -O /bin/badvpnsetup
+    	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/badvpnsetup.sh -O /bin/badvpnsetup
 	chmod +x /bin/badvpnsetup
-    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/tcptweaker.sh -O /bin/tcptweaker
+    	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/tcptweaker.sh -O /bin/tcptweaker
 	chmod +x /bin/tcptweaker
-    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/userbackup.sh -O /bin/userbackup
+    	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/userbackup.sh -O /bin/userbackup
 	chmod +x /bin/userbackup
-    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/openvpnsetup.sh -O /bin/openvpnsetup
+    	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/openvpnsetup.sh -O /bin/openvpnsetup
 	chmod +x /bin/openvpnsetup
-    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/otimizar.sh -O /bin/otimizar
+    	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/otimizar.sh -O /bin/otimizar
 	chmod +x /bin/otimizar
-    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/speedtest.sh -O /bin/speedtest
+    	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/speedtest.sh -O /bin/speedtest
 	chmod +x /bin/speedtest
-    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/detalhes.sh -O /bin/detalhes
+    	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/detalhes.sh -O /bin/detalhes
 	chmod +x /bin/detalhes
 	if [ ! -f "/etc/init.d/squid" ]
 	then
