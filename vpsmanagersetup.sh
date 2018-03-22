@@ -77,59 +77,59 @@ if [ -f "/usr/sbin/ufw" ] ; then
 fi
 if [ -d "/etc/squid3/" ]
 then
-	wget http://freedomssh.com/vpsmanager/squid1.txt -O /tmp/sqd1
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/squid1.txt -O /tmp/sqd1
 	echo "acl url3 dstdomain -i $ipdovps" > /tmp/sqd2
-	wget http://freedomssh.com/vpsmanager/squid2.txt -O /tmp/sqd3
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/squid2.txt -O /tmp/sqd3
 	cat /tmp/sqd1 /tmp/sqd2 /tmp/sqd3 > /etc/squid3/squid.conf
-	wget http://freedomssh.com/vpsmanager/payload.txt -O /etc/squid3/payload.txt
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/payload.txt -O /etc/squid3/payload.txt
 	echo " " >> /etc/squid3/payload.txt
 	grep -v "^Port 443" /etc/ssh/sshd_config > /tmp/ssh && mv /tmp/ssh /etc/ssh/sshd_config
 	echo "Port 443" >> /etc/ssh/sshd_config
 	grep -v "^PasswordAuthentication yes" /etc/ssh/sshd_config > /tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
 	echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
-	wget http://freedomssh.com/vpsmanager/scripts/banner.sh -O /bin/banner
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/banner.sh -O /bin/banner
 	chmod +x /bin/banner
-	wget http://freedomssh.com/vpsmanager/scripts/firewall/firewall.sh -O /bin/firewall
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/firewall.sh -O /bin/firewall
 	chmod +x /bin/firewall
-	wget http://freedomssh.com/vpsmanager/scripts/firewall/firewall2.sh -O /bin/firewall2
+	https://github.com/jonathasjcsilva/vpsconfigure/blob/master/firewall2.sh -O /bin/firewall2
 	chmod +x /bin/firewall2
-	wget http://freedomssh.com/vpsmanager/scripts/firewall/torrent.sh -O /bin/torrent
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/torrent.sh -O /bin/torrent
 	chmod +x /bin/torrent
-	wget http://freedomssh.com/vpsmanager/scripts/addhost.sh -O /bin/addhost
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/addhost.sh -O /bin/addhost
 	chmod +x /bin/addhost
-	wget http://freedomssh.com/vpsmanager/scripts/alterarsenha.sh -O /bin/alterarsenha
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/alterarsenha.sh -O /bin/alterarsenha
 	chmod +x /bin/alterarsenha
-	wget http://freedomssh.com/vpsmanager/scripts/criarusuario2.sh -O /bin/criarusuario
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/criarusuario2.sh -O /bin/criarusuario
 	chmod +x /bin/criarusuario
-	wget http://freedomssh.com/vpsmanager/scripts/delhost.sh -O /bin/delhost
+	https://github.com/jonathasjcsilva/vpsconfigure/blob/master/delhost.sh -O /bin/delhost
 	chmod +x /bin/delhost
-	wget http://freedomssh.com/vpsmanager/scripts/expcleaner2.sh -O /bin/expcleaner
+	https://github.com/jonathasjcsilva/vpsconfigure/blob/master/expcleaner2.sh -O /bin/expcleaner
 	chmod +x /bin/expcleaner
-	wget http://freedomssh.com/vpsmanager/scripts/mudardata.sh -O /bin/mudardata
+	https://github.com/jonathasjcsilva/vpsconfigure/blob/master/mudardata.sh -O /bin/mudardata
 	chmod +x /bin/mudardata
-	wget http://freedomssh.com/vpsmanager/scripts/remover.sh -O /bin/remover
+	https://github.com/jonathasjcsilva/vpsconfigure/blob/master/remover.sh -O /bin/remover
 	chmod +x /bin/remover
-	wget http://freedomssh.com/vpsmanager/scripts/sshlimiter2.sh -O /bin/sshlimiter
+	https://github.com/jonathasjcsilva/vpsconfigure/blob/master/sshlimiter2.sh -O /bin/sshlimiter
 	chmod +x /bin/sshlimiter
-	wget http://freedomssh.com/vpsmanager/scripts/alterarlimite.sh -O /bin/alterarlimite
+	https://github.com/jonathasjcsilva/vpsconfigure/blob/master/alterarlimite.sh -O /bin/alterarlimite
 	chmod +x /bin/alterarlimite
-	wget http://freedomssh.com/vpsmanager/scripts/ajuda.sh -O /bin/ajuda
+	https://github.com/jonathasjcsilva/vpsconfigure/blob/master/ajuda.sh -O /bin/ajuda
 	chmod +x /bin/ajuda
-	wget http://freedomssh.com/vpsmanager/scripts/sshmonitor2.sh -O /bin/sshmonitor
+	https://github.com/jonathasjcsilva/vpsconfigure/blob/master/sshmonitor2.sh -O /bin/sshmonitor
 	chmod +x /bin/sshmonitor
-    wget http://freedomssh.com/vpsmanager/scripts/badvpnsetup.sh -O /bin/badvpnsetup
+    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/badvpnsetup.sh -O /bin/badvpnsetup
 	chmod +x /bin/badvpnsetup
-    wget http://freedomssh.com/vpsmanager/scripts/tcptweaker.sh -O /bin/tcptweaker
+    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/tcptweaker.sh -O /bin/tcptweaker
 	chmod +x /bin/tcptweaker
-    wget http://freedomssh.com/vpsmanager/scripts/userbackup.sh -O /bin/userbackup
+    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/userbackup.sh -O /bin/userbackup
 	chmod +x /bin/userbackup
-    wget http://freedomssh.com/vpsmanager/scripts/openvpnsetup.sh -O /bin/openvpnsetup
+    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/openvpnsetup.sh -O /bin/openvpnsetup
 	chmod +x /bin/openvpnsetup
-    wget http://freedomssh.com/vpsmanager/scripts/otimizar.sh -O /bin/otimizar
+    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/otimizar.sh -O /bin/otimizar
 	chmod +x /bin/otimizar
-    wget http://freedomssh.com/vpsmanager/scripts/speedtest.sh -O /bin/speedtest
+    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/speedtest.sh -O /bin/speedtest
 	chmod +x /bin/speedtest
-    wget http://freedomssh.com/vpsmanager/scripts/detalhes.sh -O /bin/detalhes
+    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/detalhes.sh -O /bin/detalhes
 	chmod +x /bin/detalhes
 	if [ ! -f "/etc/init.d/squid3" ]
 	then
@@ -146,59 +146,59 @@ then
 fi
 if [ -d "/etc/squid/" ]
 then
-	wget http://freedomssh.com/vpsmanager/squid1.txt -O /tmp/sqd1
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/squid1.txt -O /tmp/sqd1
 	echo "acl url3 dstdomain -i $ipdovps" > /tmp/sqd2
-	wget http://freedomssh.com/vpsmanager/squid.txt -O /tmp/sqd3
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/squid.txt -O /tmp/sqd3
 	cat /tmp/sqd1 /tmp/sqd2 /tmp/sqd3 > /etc/squid/squid.conf
-	wget http://freedomssh.com/vpsmanager/payload.txt -O /etc/squid/payload.txt
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/payload.txt -O /etc/squid/payload.txt
 	echo " " >> /etc/squid/payload.txt
 	grep -v "^Port 443" /etc/ssh/sshd_config > /tmp/ssh && mv /tmp/ssh /etc/ssh/sshd_config
 	echo "Port 443" >> /etc/ssh/sshd_config
 	grep -v "^PasswordAuthentication yes" /etc/ssh/sshd_config > /tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
 	echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
-	wget http://freedomssh.com/vpsmanager/scripts/banner.sh -O /bin/banner
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/banner.sh -O /bin/banner
 	chmod +x /bin/banner
-	wget http://freedomssh.com/vpsmanager/scripts/firewall/firewall.sh -O /bin/firewall
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/firewall.sh -O /bin/firewall
 	chmod +x /bin/firewall
-	wget http://freedomssh.com/vpsmanager/scripts/firewall/firewall2.sh -O /bin/firewall2
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/firewall2.sh -O /bin/firewall2
 	chmod +x /bin/firewall2
-	wget http://freedomssh.com/vpsmanager/scripts/firewall/torrent.sh -O /bin/torrent
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/torrent.sh -O /bin/torrent
 	chmod +x /bin/torrent
-	wget http://freedomssh.com/vpsmanager/scripts/2/addhost.sh -O /bin/addhost
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/addhost.sh -O /bin/addhost
 	chmod +x /bin/addhost
-	wget http://freedomssh.com/vpsmanager/scripts/alterarsenha.sh -O /bin/alterarsenha
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/alterarsenha.sh -O /bin/alterarsenha
 	chmod +x /bin/alterarsenha
-	wget http://freedomssh.com/vpsmanager/scripts/criarusuario2.sh -O /bin/criarusuario
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/criarusuario2.sh -O /bin/criarusuario
 	chmod +x /bin/criarusuario
-	wget http://freedomssh.com/vpsmanager/scripts/2/delhost.sh -O /bin/delhost
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/delhost.sh -O /bin/delhost
 	chmod +x /bin/delhost
-	wget http://freedomssh.com/vpsmanager/scripts/expcleaner2.sh -O /bin/expcleaner
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/expcleaner2.sh -O /bin/expcleaner
 	chmod +x /bin/expcleaner
-	wget http://freedomssh.com/vpsmanager/scripts/mudardata.sh -O /bin/mudardata
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/mudardata.sh -O /bin/mudardata
 	chmod +x /bin/mudardata
-	wget http://freedomssh.com/vpsmanager/scripts/remover.sh -O /bin/remover
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/remover.sh -O /bin/remover
 	chmod +x /bin/remover
-	wget http://freedomssh.com/vpsmanager/scripts/sshlimiter2.sh -O /bin/sshlimiter
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/sshlimiter2.sh -O /bin/sshlimiter
 	chmod +x /bin/sshlimiter
-	wget http://freedomssh.com/vpsmanager/scripts/alterarlimite.sh -O /bin/alterarlimite
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/alterarlimite.sh -O /bin/alterarlimite
 	chmod +x /bin/alterarlimite
-	wget http://freedomssh.com/vpsmanager/scripts/ajuda.sh -O /bin/ajuda
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/ajuda.sh -O /bin/ajuda
 	chmod +x /bin/ajuda
-	wget http://freedomssh.com/vpsmanager/scripts/sshmonitor2.sh -O /bin/sshmonitor
+	wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/sshmonitor2.sh -O /bin/sshmonitor
 	chmod +x /bin/sshmonitor
-    wget http://freedomssh.com/vpsmanager/scripts/badvpnsetup.sh -O /bin/badvpnsetup
+    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/badvpnsetup.sh -O /bin/badvpnsetup
 	chmod +x /bin/badvpnsetup
-    wget http://freedomssh.com/vpsmanager/scripts/tcptweaker.sh -O /bin/tcptweaker
+    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/tcptweaker.sh -O /bin/tcptweaker
 	chmod +x /bin/tcptweaker
-    wget http://freedomssh.com/vpsmanager/scripts/userbackup.sh -O /bin/userbackup
+    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/userbackup.sh -O /bin/userbackup
 	chmod +x /bin/userbackup
-    wget http://freedomssh.com/vpsmanager/scripts/openvpnsetup.sh -O /bin/openvpnsetup
+    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/openvpnsetup.sh -O /bin/openvpnsetup
 	chmod +x /bin/openvpnsetup
-    wget http://freedomssh.com/vpsmanager/scripts/otimizar.sh -O /bin/otimizar
+    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/otimizar.sh -O /bin/otimizar
 	chmod +x /bin/otimizar
-    wget http://freedomssh.com/vpsmanager/scripts/speedtest.sh -O /bin/speedtest
+    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/speedtest.sh -O /bin/speedtest
 	chmod +x /bin/speedtest
-    wget http://freedomssh.com/vpsmanager/scripts/detalhes.sh -O /bin/detalhes
+    wget https://github.com/jonathasjcsilva/vpsconfigure/blob/master/detalhes.sh -O /bin/detalhes
 	chmod +x /bin/detalhes
 	if [ ! -f "/etc/init.d/squid" ]
 	then
